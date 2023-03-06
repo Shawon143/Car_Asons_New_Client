@@ -58,7 +58,7 @@ const Items = ({ cars, load }) => {
       <Button onClick={() => filter("nissan")}>NISSAN</Button>
 
       {load ? (
-        <Row xs={1} md={4} className="g-4 mt-3">
+        <Row xs={1} md={3} className="g-4 mt-3">
           {items.map((service) => (
             <SingleCar service={service} key={service.name}></SingleCar>
           ))}
